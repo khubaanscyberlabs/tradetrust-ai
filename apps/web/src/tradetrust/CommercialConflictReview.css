@@ -1,0 +1,232 @@
+/* TradeTrust 09E2: scoped synthetic-only interactive commercial review. */
+.tt-integrity { margin: 24px 0 28px; padding: clamp(18px, 3vw, 32px); border: 1px solid #dce4ec; border-radius: 20px; background: #fcfdfd; color: #172c3a; box-shadow: 0 8px 30px rgba(10,35,55,.035); }
+.tt-integrity * { box-sizing: border-box; }
+.tt-integrity-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
+.tt-integrity-kicker, .tt-integrity-coltop, .tt-integrity-resulthead > div > span { letter-spacing: .11em; font-size: .71rem; font-weight: 800; color: #277b77; }
+.tt-integrity-heading h2 { margin: 10px 0; font-size: clamp(1.5rem,2.4vw,2rem); line-height: 1.2; }
+.tt-integrity-heading p:not(.tt-integrity-kicker) { color: #526879; max-width: 680px; font-size: .92rem; line-height: 1.65; }
+.tt-integrity-chip { padding: 9px 12px; border-radius: 8px; background: #f0f4f8; color: #355468; white-space: nowrap; font-size: .68rem; font-weight: 800; }
+.tt-integrity-presets { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 20px; }
+.tt-integrity-presets button { padding: 9px 13px; font-size: .8rem; border: 1px solid #c9d9df; border-radius: 9px; cursor: pointer; color: #20505c; background: white; }
+.tt-integrity-presets button:hover { background: #edf8f5; }
+.tt-integrity-presets button:focus-visible,.tt-integrity-fields select:focus-visible { outline: 3px solid #22a8a0; outline-offset: 2px; }
+.tt-integrity-columns { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
+.tt-integrity-seller,.tt-integrity-buyer { padding: 18px; border: 1px solid #dce5ec; background: white; border-radius: 14px; min-width: 0; }
+.tt-integrity-coltop { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.tt-integrity-coltop strong { font-size: .7rem; font-weight: 600; color: #617789; letter-spacing: 0; }
+.tt-integrity h3 { margin: 11px 0 14px; font-size: 1.12rem; }
+.tt-integrity-facts { margin: 0; }
+.tt-integrity-facts div { display: flex; justify-content: space-between; gap: 15px; padding: 10px 0; border-bottom: 1px solid #edf0f3; font-size: .84rem; }
+.tt-integrity-facts dt { color: #607180; }
+.tt-integrity-facts dd { margin: 0; font-weight: 700; text-align: right; }
+.tt-integrity-pending { color: #a36318; }
+.tt-integrity-fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.tt-integrity-fields label { font-size: .78rem; font-weight: 700; color: #526372; display: flex; flex-direction: column; gap: 6px; }
+.tt-integrity-fields select { display: block; width: 100%; background: white; color: #172c3a; padding: 11px 9px; border: 1px solid #cad8e0; border-radius: 8px; font-size: .83rem; }
+.tt-integrity-source { font-size: .74rem; line-height: 1.5; color: #688092; margin: 15px 0 0; }
+.tt-integrity-results { padding: 21px; background: #f3f8fa; border: 1px solid #dce9ed; border-radius: 14px; margin-top: 15px; }
+.tt-integrity-resulthead { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.tt-integrity-resulthead h3 { margin-bottom: 0; }
+.tt-integrity-blocked,.tt-integrity-clarify { font-size: .72rem; padding: 8px 10px; border-radius: 7px; }
+.tt-integrity-blocked { color: #912b24; background: #ffece9; }
+.tt-integrity-clarify { color: #875813; background: #fff1ce; }
+.tt-integrity-counts { color: #506879; margin: 16px 0; font-size: .8rem; }
+.tt-integrity-findings { margin: 0; padding: 0; list-style: none; display: grid; gap: 9px; }
+.tt-integrity-findings li { padding: 12px; display: flex; gap: 11px; align-items: flex-start; background: white; border: 1px solid #e0e8ed; border-radius: 10px; }
+.tt-integrity-findings strong { font-size: .85rem; }
+.tt-integrity-findings p { font-size: .78rem; line-height: 1.5; color: #5c7181; margin: 3px 0 0; }
+.tt-integrity-severity { min-width: 82px; text-align: center; padding: 5px; border-radius: 5px; font-size: .59rem; font-weight: 800; }
+.tt-integrity-conflict { color: #8b2520; background: #fce2df; }
+.tt-integrity-review { color: #916018; background: #fff0ce; }
+.tt-integrity-clarification { color: #1c697b; background: #dff3fa; }
+.tt-integrity-next { margin-top: 16px; padding: 12px; border-left: 3px solid #348e9c; background: white; font-size: .8rem; line-height: 1.6; }
+.tt-integrity-locked { margin-top: 15px; font-size: .74rem; font-weight: 700; color: #5a6f7f; }
+@media (max-width: 760px) { .tt-integrity-columns { grid-template-columns: 1fr; } .tt-integrity-heading,.tt-integrity-resulthead { flex-direction: column; align-items: flex-start; } .tt-integrity-chip { white-space: normal; } }
+@media (max-width: 390px) { .tt-integrity-fields { grid-template-columns: 1fr; } .tt-integrity-findings li { flex-direction: column; } }
+
+
+/* TRADETRUST-UI-03: accessibility and visual acceptance. */
+.tt-integrity-heading h2 {
+  color: #142f38 !important;
+  -webkit-text-fill-color: #142f38 !important;
+  background: none !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  font-weight: 750;
+  letter-spacing: -.025em;
+}
+.tt-integrity-heading > div {
+  min-width: 0;
+}
+.tt-integrity-resulthead h3 {
+  color: #142f38;
+}
+.tt-integrity-resulthead {
+  gap: 14px;
+}
+.tt-integrity-blocked,
+.tt-integrity-clarify {
+  line-height: 1.4;
+}
+@media (max-width: 660px) {
+  .tt-integrity-heading h2 {
+    font-size: clamp(1.45rem, 6vw, 1.85rem);
+    line-height: 1.22;
+  }
+  .tt-integrity-resulthead {
+    align-items: flex-start;
+  }
+}
+
+
+/* TRADETRUST-UI-05B: authenticated review presentation only. */
+.tt-verified-review {
+  color: #17343d;
+  background: #f3f8f7;
+  border: 1px solid #d7e5e2;
+  border-radius: 16px;
+  padding: clamp(16px, 2.5vw, 25px);
+}
+.tt-verified-review-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.tt-verified-review-kicker {
+  display: block;
+  color: #176e65;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .085em;
+}
+.tt-verified-review-heading h3 {
+  color: #14343d !important;
+  -webkit-text-fill-color: #14343d !important;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  line-height: 1.25;
+  margin: 9px 0 0;
+  letter-spacing: -.02em;
+}
+.tt-verified-review-status {
+  color: #842b25;
+  background: #fff0ed;
+  border: 1px solid #eccac4;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: .78rem;
+  font-weight: 750;
+  line-height: 1.3;
+}
+.tt-verified-review-intro {
+  margin: 13px 0 18px;
+  color: #425d65;
+  font-size: .86rem;
+  line-height: 1.65;
+}
+.tt-verified-review-list {
+  gap: 11px;
+}
+.tt-verified-review-list li {
+  align-items: flex-start;
+  border: 1px solid #dce6e4;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+  text-align: left;
+}
+.tt-verified-review-list .tt-integrity-severity {
+  min-width: 93px;
+  padding: 7px 9px;
+  font-size: .69rem;
+  line-height: 1.4;
+  border-radius: 7px;
+}
+.tt-verified-review-finding {
+  flex: 1;
+  min-width: 0;
+}
+.tt-verified-review-finding strong {
+  display: block;
+  color: #183841;
+  font-size: .95rem;
+  line-height: 1.4;
+}
+.tt-verified-review-finding p {
+  color: #425d65;
+  font-size: .82rem;
+  line-height: 1.6;
+  margin: 6px 0 0;
+}
+.tt-verified-review-audit {
+  margin-top: 18px;
+  border: 1px solid #d4e4df;
+  border-radius: 10px;
+  background: #fff;
+}
+.tt-verified-review-audit summary {
+  padding: 12px 15px;
+  cursor: pointer;
+  color: #19574f;
+  font-size: .83rem;
+  font-weight: 750;
+}
+.tt-verified-review-audit summary:focus-visible {
+  outline: 3px solid #08776d;
+  outline-offset: 3px;
+}
+.tt-verified-review-audit-body {
+  border-top: 1px solid #e2ebe8;
+  padding: 13px 15px;
+  color: #36535d;
+  font-size: .8rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+.tt-verified-review-audit-body p {
+  margin: 0 0 9px;
+}
+.tt-verified-review-audit-body ul {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.tt-verified-review-audit-body li {
+  display: grid;
+  gap: 5px;
+  margin-top: 11px;
+  border-top: 1px solid #e4ece9;
+  padding-top: 11px;
+}
+.tt-verified-review-audit code {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  color: #173e45 !important;
+  -webkit-text-fill-color: #173e45 !important;
+  background: #e7f1ee !important;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: .77rem;
+}
+.tt-verified-review-footer {
+  margin: 15px 0 0;
+  color: #405e67;
+  font-size: .79rem;
+  line-height: 1.65;
+  text-align: left;
+}
+@media (max-width: 520px) {
+  .tt-verified-review-list li {
+    flex-direction: column;
+  }
+  .tt-verified-review-list .tt-integrity-severity {
+    min-width: 0;
+  }
+  .tt-verified-review-heading {
+    flex-direction: column;
+  }
+}

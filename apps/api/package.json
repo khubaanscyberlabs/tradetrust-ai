@@ -1,0 +1,19 @@
+{
+  "name": "tradetrust-dealroom-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local --ip 127.0.0.1 --port 8787",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "wrangler": "4.156.0"
+  },
+  "dependencies": {
+    "jose": "6.2.14"
+  }
+}

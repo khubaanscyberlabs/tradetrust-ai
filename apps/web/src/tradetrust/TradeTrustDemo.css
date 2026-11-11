@@ -1,0 +1,255 @@
+/* System-font-only: no third-party font or script requests. */
+:root{font-family:'DM Sans',system-ui,sans-serif;font-synthesis:none}*{box-sizing:border-box}
+body{display:block;place-items:initial;margin:0;min-width:320px;background:#f6f8fb;color:#152b36}#root{width:100%;min-width:0}button,select{font:inherit}button{cursor:pointer}
+.tt-page{min-height:100vh;background:#f7f9fb}.tt-toprule{height:5px;background:linear-gradient(90deg,#143746,#20b6ac 60%,#d0b478)}
+.tt-header{max-width:1420px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 40px;border-bottom:1px solid #e2e8eb}
+.tt-brand{display:flex;align-items:center;gap:11px}.tt-brandmark{display:inline-flex;align-items:center;justify-content:center;background:#113544;color:#fff;height:42px;width:42px;border-radius:13px;font-weight:800;font-size:24px}.tt-brandmark span{font-size:18px;color:#8ae6d3;margin-left:-3px}.tt-brand strong{display:block;font-family:Manrope,system-ui,sans-serif;font-size:19px;letter-spacing:-.7px}.tt-brand em{color:#13a99c;font-style:normal}.tt-brand small{display:block;font-size:11px;color:#738995;margin-top:1px;letter-spacing:.25px}.tt-header-right{display:flex;align-items:center;gap:18px}.tt-simulation{background:#e5f8f1;color:#12775b;padding:8px 11px;border-radius:20px;font-size:11px;letter-spacing:.5px;font-weight:800}.tt-lock{font-size:12px;color:#637d8a}
+.tt-shell{max-width:1420px;margin:auto;padding:27px 40px 20px}.tt-hero{display:flex;justify-content:space-between;align-items:center;gap:28px;margin:15px 0 27px}.tt-eyebrow,.tt-overline{letter-spacing:1.7px;font-weight:800;font-size:10px;color:#139a90}.tt-hero h1{font-family:Manrope,system-ui,sans-serif;letter-spacing:-2.3px;font-size:clamp(34px,4vw,59px);line-height:1.14;margin:13px 0 15px;font-weight:800}.tt-hero h1 i{color:#12a99e;font-style:normal}.tt-intro{max-width:610px;line-height:1.8;font-size:14px;color:#71838e;margin:0}.tt-hero-card{min-width:250px;background:#113645;color:white;padding:21px 25px;border-radius:18px;box-shadow:0 14px 28px #10344418}.tt-hero-card-top{font-size:10px;letter-spacing:1.3px;color:#9ed0ce;font-weight:700}.tt-hero-card>strong{display:block;font-size:43px;margin:9px 0 0;letter-spacing:-2px;font-family:Manrope,system-ui}.tt-hero-card>strong span{font-size:20px;color:#94b6be}.tt-hero-card p{font-size:11px;color:#c5d7dc;margin:0 0 20px}.tt-hero-card>div{border-top:1px solid #335260;padding-top:15px;font-size:10px;color:#c5d7dc}.tt-green-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#3ddec5;margin-right:4px}
+.tt-warning{background:#fff8e9;border:1px solid #f0ddb3;color:#776438;border-radius:12px;padding:13px 18px;font-size:12px;line-height:1.7;margin-bottom:19px}.tt-pipeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 21px}.tt-step{display:flex;align-items:center;gap:12px;border:1px solid #e3e9ed;background:white;border-radius:12px;padding:15px;min-height:78px;opacity:.64}.tt-step.reached{opacity:1;border-color:#b8e7df}.tt-step-number{min-width:31px;height:31px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;background:#eef2f5;color:#8096a1;font-weight:800;font-size:12px}.tt-step.reached .tt-step-number{background:#dff8f1;color:#148777}.tt-step strong{display:block;font-size:12px}.tt-step small{display:block;font-size:10px;color:#80919b;line-height:1.4;margin-top:4px}
+.tt-main-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(330px,1fr);gap:20px}.tt-panel{min-width:0;background:white;border:1px solid #e3eaf0;border-radius:17px;box-shadow:0 12px 30px #142f4408;overflow:hidden}.tt-tabs{display:flex;border-bottom:1px solid #e9eef0;padding:0 24px;gap:25px}.tt-tabs button{border:0;border-bottom:3px solid transparent;background:transparent;padding:19px 3px 14px;color:#8497a2;font-weight:700;font-size:13px}.tt-tabs button.active{border-bottom-color:#10b3a5;color:#193e46}.tt-panel-body{padding:27px 31px 30px;min-height:445px}.tt-panel h2{font-family:Manrope,system-ui,sans-serif;letter-spacing:-.9px;font-size:24px;margin:9px 0}.tt-muted{color:#80919c;font-size:12px;line-height:1.75;margin:4px 0 22px}.tt-message{display:flex;align-items:flex-start;gap:12px;padding:17px;border-radius:12px;background:#f2f8f8;margin-bottom:22px}.tt-message p{font-size:12px;line-height:1.65;margin:0;color:#34505d}.tt-avatar{width:30px;height:30px;display:grid;place-items:center;flex-shrink:0;background:#d1f1e9;color:#0d836f;font-weight:800;border-radius:10px;font-size:12px}.tt-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.tt-fields label{font-size:11px;font-weight:800;color:#55707e}.tt-fields label.tt-full{grid-column:1/-1}.tt-fields select{display:block;appearance:auto;width:100%;padding:12px;border:1px solid #dce7ed;border-radius:9px;background:#fff;color:#304857;margin-top:8px;font-size:12px;min-height:44px}.tt-fields select:disabled{background:#f2f5f6;opacity:.7}.tt-primary{width:100%;background:#0d817c;color:white;border:0;border-radius:11px;padding:15px 18px;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:space-between;margin-top:23px}.tt-primary:hover{background:#086c66}.tt-primary:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #54c9b8;outline-offset:3px}.tt-policy{font-size:12px;color:#aa542c;background:#fff4ec;padding:12px;border-radius:8px}.tt-confirmation{background:#e9f8ef;border:1px solid #bedfcc;color:#237358;padding:14px;font-size:12px;border-radius:10px;line-height:1.5;margin-top:22px}.tt-confirmation span{font-weight:900;margin-right:8px}.tt-merchant-card{display:flex;justify-content:space-between;align-items:center;padding:16px;border:1px solid #e4edf1;border-radius:12px;margin:20px 0}.tt-merchant-card>div{display:flex;gap:10px;align-items:center}.tt-merchant-avatar{background:#dfeaf0;color:#346372}.tt-merchant-card strong{display:block;font-size:12px}.tt-merchant-card small{display:block;font-size:10px;color:#8495a0;margin-top:3px}.tt-local-label{font-size:9px;background:#ebf3f6;color:#5f8391;border-radius:5px;padding:6px 8px;font-weight:800;letter-spacing:.5px}.tt-approval-rows{display:grid;grid-template-columns:1fr auto;gap:12px;border-top:1px solid #edf1f2;border-bottom:1px solid #edf1f2;padding:18px 0;font-size:12px}.tt-approval-rows span{color:#8496a0}.tt-approval-rows strong{text-align:right;color:#2d4b56}.tt-empty{padding:15px;color:#80919b;font-size:12px;background:#f2f6f7;border-radius:10px;margin-top:20px}
+.tt-quote{padding:26px 28px 27px}.tt-quote-header{display:flex;justify-content:space-between;align-items:center}.tt-quote .tt-muted{margin-bottom:18px}.tt-product{display:flex;gap:13px;align-items:center;background:#f3f7f7;padding:13px;border-radius:12px;margin-bottom:17px}.tt-product-art{height:55px;width:55px;border-radius:12px;background:#e3eeec;color:#51958d;font-size:33px;display:grid;place-items:center}.tt-product strong{font-size:12px;display:block}.tt-product small{font-size:10px;display:block;margin-top:5px;color:#8497a1}.tt-amounts{padding:10px 0;border-bottom:1px solid #e8edee}.tt-amounts>div{display:flex;justify-content:space-between;font-size:12px;padding:8px 0}.tt-amounts span{color:#82959f}.tt-amounts strong{color:#334b57}.tt-total{display:flex;justify-content:space-between;align-items:center;padding:20px 0 11px}.tt-total>span{font-size:12px;font-weight:800}.tt-total strong{font-family:Manrope,system-ui;font-size:25px;letter-spacing:-1px;color:#103d47}.tt-total small{font-size:10px;color:#80959c}.tt-price-note{font-size:10px;line-height:1.7;color:#6a8994;background:#edf7f4;border-radius:8px;padding:11px}.tt-invoice-preview{border-top:1px solid #e5ebed;padding-top:22px;margin-top:19px}.tt-invoice-preview>strong{display:block;font-size:14px;margin:8px 0}.tt-invoice-preview>small{display:block;font-size:10px;color:#8094a0;line-height:1.6}.tt-invoice-preview button{display:block;border:0;border-radius:9px;width:100%;padding:13px;margin-top:15px;background:#e3e9ed;color:#83949e;font-weight:800;font-size:12px;cursor:not-allowed}.tt-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;background:#eef7f6;border-radius:10px;margin-top:19px;padding:12px 18px}.tt-bottom p{font-size:11px;line-height:1.6;margin:0;color:#56737e}.tt-pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:#26b99b;margin-right:7px}.tt-bottom button{white-space:nowrap;border:1px solid #cee3e0;background:#fff;color:#397872;border-radius:8px;padding:9px 12px;font-size:11px;font-weight:700}.tt-footer{display:flex;justify-content:space-between;gap:12px;font-size:10px;color:#8ca0a9;padding:24px 2px}
+@media(max-width:1000px){.tt-main-grid{grid-template-columns:1fr}.tt-hero-card{min-width:220px}.tt-pipeline{grid-template-columns:repeat(2,1fr)}}@media(max-width:660px){.tt-header{padding:14px 18px}.tt-header-right{flex-direction:column;align-items:flex-end;gap:5px}.tt-lock{font-size:10px}.tt-simulation{font-size:9px}.tt-shell{padding:18px 15px}.tt-hero{flex-direction:column;align-items:stretch}.tt-hero-card{width:100%}.tt-hero h1{font-size:34px;letter-spacing:-1.6px}.tt-pipeline{gap:6px}.tt-step{padding:10px;min-height:79px;gap:7px}.tt-step strong{font-size:10px}.tt-step small{font-size:9px}.tt-step-number{min-width:25px;height:25px;font-size:9px}.tt-panel-body,.tt-quote{padding:22px 18px}.tt-tabs{gap:18px;padding:0 16px}.tt-tabs button{font-size:11px}.tt-bottom{align-items:stretch;flex-direction:column}.tt-footer{flex-direction:column}.tt-fields{gap:9px}}
+
+
+/* TRADETRUST-UI-02: scoped premium visual refinement. */
+.tt-page {
+  background: #f6f8f6;
+  color: #142f38;
+}
+.tt-hero {
+  gap: clamp(22px, 4vw, 60px);
+}
+.tt-hero > div:first-child {
+  min-width: 0;
+}
+.tt-hero h1 {
+  color: #142f38 !important;
+  -webkit-text-fill-color: #142f38 !important;
+  background: none !important;
+  font-weight: 750;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+.tt-hero h1 i {
+  color: #0b766d !important;
+  -webkit-text-fill-color: #0b766d !important;
+  background: none !important;
+  font-style: normal;
+}
+.tt-hero .tt-intro {
+  color: #455f65;
+  line-height: 1.7;
+  max-width: 600px;
+}
+.tt-eyebrow {
+  color: #0b665e;
+  letter-spacing: .105em;
+}
+.tt-hero-card.tt-hero-trust {
+  background: linear-gradient(145deg, #142f38, #1b4650);
+  border: 1px solid #31545b;
+  border-radius: 20px;
+  padding: 26px;
+  color: #f4fbf9;
+  box-shadow: 0 16px 42px rgba(18, 47, 56, .13);
+  min-width: min(100%, 315px);
+}
+.tt-hero-trust .tt-hero-card-top {
+  color: #a7ded5;
+  font-size: .69rem;
+  letter-spacing: .12em;
+  font-weight: 800;
+}
+.tt-hero-trust h2 {
+  color: #ffffff !important;
+  font-size: clamp(1.35rem, 2.3vw, 2rem);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -.025em;
+  margin: 16px 0 12px;
+}
+.tt-hero-trust h2 em {
+  color: #a7e5d8;
+  font-style: normal;
+}
+.tt-hero-trust p {
+  color: #d3e3e2;
+  font-size: .88rem;
+  line-height: 1.6;
+}
+.tt-hero-trust-grid {
+  margin-top: 19px;
+  display: grid;
+  gap: 9px;
+}
+.tt-hero-trust-grid span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(255,255,255,.16);
+  color: #f1f8f7;
+  font-size: .79rem;
+  line-height: 1.45;
+}
+.tt-hero-trust-grid b {
+  color: #a7e5d8;
+  font-size: .72rem;
+}
+.tt-context-band {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px 15px;
+  padding: 12px 16px;
+  margin: 12px 0 17px;
+  background: #eaf5f1;
+  border: 1px solid #c7e0d9;
+  border-radius: 12px;
+  color: #355960;
+  font-size: .77rem;
+  line-height: 1.55;
+}
+.tt-context-band strong {
+  color: #075c53;
+  letter-spacing: .06em;
+  font-size: .69rem;
+}
+.tt-warning {
+  background: #f3f8f6;
+  border-color: #d6e5df;
+  color: #385b60;
+}
+.tt-page .tt-panel {
+  border-color: #dce7e3;
+  box-shadow: 0 8px 25px rgba(16, 49, 54, .045);
+}
+.tt-page button:focus-visible,
+.tt-page a:focus-visible {
+  outline: 3px solid #0b766d;
+  outline-offset: 3px;
+}
+@media (max-width: 1000px) {
+  .tt-hero { align-items: stretch; }
+  .tt-hero-card.tt-hero-trust { width: 100%; }
+}
+@media (max-width: 660px) {
+  .tt-hero { flex-direction: column; }
+  .tt-hero h1 { line-height: 1.12; }
+  .tt-hero-card.tt-hero-trust { min-width: 0; }
+  .tt-context-band { align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tt-page *,
+  .tt-page *::before,
+  .tt-page *::after {
+    scroll-behavior: auto;
+  }
+}
+
+
+/* TRADETRUST-UI-03A: merchant approval headline contrast. */
+.tt-page .tt-human-approval-heading,
+.tt-page .tt-human-approval-heading * {
+  color: #142f38 !important;
+  -webkit-text-fill-color: #142f38 !important;
+  background: none !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  opacity: 1;
+}
+.tt-page .tt-human-approval-heading {
+  font-weight: 750;
+  letter-spacing: -.035em;
+  line-height: 1.18;
+  text-wrap: balance;
+}
+
+
+/*
+ * TRADETRUST-UI-04C
+ * Accessibility refinement for light surfaces.
+ * White lettering on dark branded surfaces remains unchanged.
+ */
+
+/* Headings displayed on light panels. */
+.tt-page .tt-panel h1,
+.tt-page .tt-panel h2,
+.tt-page .tt-panel h3,
+.tt-page .tt-bottom h2,
+.tt-page .tt-integrity h2,
+.tt-page .tt-integrity h3 {
+  color: #142f38 !important;
+  -webkit-text-fill-color: #142f38 !important;
+  text-shadow: none !important;
+}
+
+/* Readable descriptive labels on light backgrounds. */
+.tt-page .tt-muted,
+.tt-page .tt-price-note,
+.tt-page .tt-overline,
+.tt-page .tt-local-label,
+.tt-page .tt-empty,
+.tt-page .tt-lock {
+  color: #35525b !important;
+  -webkit-text-fill-color: #35525b !important;
+}
+
+/* Secondary quotation and workflow labels. */
+.tt-page .tt-step small,
+.tt-page .tt-merchant-card small,
+.tt-page .tt-product small,
+.tt-page .tt-total small,
+.tt-page .tt-invoice-preview > small,
+.tt-page .tt-brand small,
+.tt-page .tt-footer {
+  color: #395560 !important;
+  -webkit-text-fill-color: #395560 !important;
+}
+
+/* Progress markers: readable text on controlled light fill. */
+.tt-page .tt-step-number,
+.tt-page .tt-step.reached .tt-step-number {
+  color: #153c44 !important;
+  -webkit-text-fill-color: #153c44 !important;
+  background-color: #dcefe9 !important;
+}
+
+/* Icon and avatar contrast. */
+.tt-page .tt-avatar,
+.tt-page .tt-product-art {
+  color: #174a52 !important;
+  -webkit-text-fill-color: #174a52 !important;
+}
+
+/* Commercial-review supporting evidence. */
+.tt-page .tt-integrity-source,
+.tt-page .tt-integrity-counts {
+  color: #39545e !important;
+  -webkit-text-fill-color: #39545e !important;
+}
+
+/* Disabled remains disabled; wording stays readable. */
+.tt-page .tt-invoice-preview button:disabled {
+  color: #39545e !important;
+  -webkit-text-fill-color: #39545e !important;
+  background-color: #e5eded !important;
+  opacity: 1 !important;
+}
+
+/* Preserve white on dark hero surfaces. */
+.tt-page .tt-hero-trust h2 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+.tt-page .tt-hero-trust h2 em {
+  color: #a7e5d8 !important;
+  -webkit-text-fill-color: #a7e5d8 !important;
+}
+
+/* Visible keyboard navigation. */
+.tt-page :is(button, a, select, input):focus-visible {
+  outline: 3px solid #08776d;
+  outline-offset: 3px;
+}

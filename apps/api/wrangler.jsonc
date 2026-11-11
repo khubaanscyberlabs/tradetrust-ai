@@ -1,0 +1,31 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "tradetrust-ai-dealroom-local",
+  "assets": {
+    "directory": "../web/dist",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*", "/health"]
+  },
+  "account_id": "c58247847688c199cd0516105f1ee1d1",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-30",
+  "workers_dev": false,
+  "preview_urls": false,
+  "dev": {
+    "ip": "127.0.0.1",
+    "port": 8787
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "tradetrust-dealroom-local",
+      "database_id": "00000000-0000-0000-0000-000000000006",
+      "migrations_dir": "migrations",
+      "remote": false
+    }
+  ],
+  "ai": {
+    "binding": "AI",
+    "remote": true
+  }
+}
